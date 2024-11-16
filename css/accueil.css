@@ -1,6 +1,43 @@
 main {
     background-color: bisque;
 }
-section {
-    margin: 20rem;
+.center {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.entete {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background: rgb(233, 175, 175);
+background: linear-gradient(149deg, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 100%);
+display: flex;
+}
+h1{
+    margin: 0;
+    font-size: 2rem;
+    color: #EEEEEE;
+}
+.entete h2{
+    margin: 1rem 0;
+    font-size: 4rem;
+    background-image: linear-gradient(130deg, #EEEEEE, #69C3D2, #F4AF2D);
+  background-clip: text;
+  color: transparent;
+}
+.entete p{
+    color: #EEEEEE;
+    font-family: "Roboto";
+    margin-bottom: 5rem;
+}
+
+.butprin {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.entete img {
+    
+    top: 0;
+    right: 0;
 }

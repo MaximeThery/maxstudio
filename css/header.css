@@ -1,6 +1,13 @@
 header{
     background: rgb(244,175,45);
     background: linear-gradient(90deg, rgba(244,175,45,1) 0%, rgba(255,255,255,1) 33%, rgba(105,195,210,1) 100%);
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 header ul {
@@ -9,7 +16,18 @@ header ul {
     justify-content: flex-start;
     height: 5rem;
     align-self: end;
-    width: 100%;
-    justify-content: space-around;
+    width: 50rem;
+    justify-content: space-between;
     align-items: center;
+}
+
+.my-custom-logo {
+    /* Exemple de style */
+    text-align: center; /* Centrer le logo */
+    padding-left: 1rem;
+}
+.my-custom-logo img {
+    width: 6rem; /* Ajustez la taille de votre logo */
+    height: auto;
+    background-color: transparent !important;
 }
