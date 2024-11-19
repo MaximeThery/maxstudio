@@ -7,37 +7,89 @@ main {
 }
 
 .entete {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    height: 80vh;
     background: rgb(233, 175, 175);
-background: linear-gradient(149deg, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 100%);
-display: flex;
+    background: linear-gradient(149deg, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 100%);
+    display: flex;
+    align-items: center
 }
 h1{
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #EEEEEE;
 }
 .entete h2{
     margin: 1rem 0;
-    font-size: 4rem;
+    font-size: 3rem;
     background-image: linear-gradient(130deg, #EEEEEE, #69C3D2, #F4AF2D);
   background-clip: text;
   color: transparent;
 }
+
+.texte{
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
 .entete p{
     color: #EEEEEE;
     font-family: "Roboto";
-    margin-bottom: 5rem;
 }
-
-.butprin {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .entete img {
-    
     top: 0;
     right: 0;
+}
+
+.entete .butsec a{
+    margin-right: 2rem;
+}
+
+/* ------------------------ fin de la première div -------------------------------*/
+
+
+.slider {
+    margin: 0;
+    position: relative;
+    width: 100%; /* Largeur du slider */
+    height: 100vh; /* Hauteur du slider */
+    overflow: hidden;
+}
+
+/* Chaque slide */
+.slide {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Par défaut, toutes les slides sont masquées */
+    transition: opacity 2s ease-in-out; /* Transition douce pour le fondu */
+    z-index: 0; /* Empêche les slides masquées d'interférer */
+}
+
+/* Slide active */
+.slide.active {
+    opacity: 1; /* Slide visible */
+    z-index: 1; /* Passe devant les autres slides */
+}
+
+/* Images */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste les images pour qu'elles remplissent le conteneur */
+}
+
+.slide.active img {
+    animation: zoom 8s ease-in-out;
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Zoom léger */
+    }
 }

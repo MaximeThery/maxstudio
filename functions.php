@@ -24,5 +24,17 @@ function disable_wp_block_library_css() {
     wp_dequeue_style('global-styles');
 }
 add_action('wp_enqueue_scripts', 'disable_wp_block_library_css', 100);
+
+function ajouter_scripts_personnalises() {
+    // Enregistre et inclut votre fichier JS
+    wp_enqueue_script(
+        'slider-script', // Identifiant unique pour le script
+        get_template_directory_uri() . '/js/slider.js', // Chemin vers le fichier JS
+        array('jquery'), // Dépendances (optionnel, ici jQuery)
+        null, // Version (optionnel)
+        true // Charger le script dans le footer
+    );
+}
+add_action('wp_enqueue_scripts', 'ajouter_scripts_personnalises');
 ?>
 

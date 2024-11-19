@@ -22,10 +22,27 @@ a {
     text-decoration: none;
 }
 
+.boutons > div{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
 
 .butprin a{
     background-color: #F4AF2D;
     padding: 1rem;
     font-family: "Roboto";
     font-weight : 900;
+}
+
+.butsec a{
+    border: solid white 0.5rem;
+    padding: 0.5rem;
+    font-family: "Roboto";
+    font-weight : 900;
+    color: white;
+}
+
+p{
+    font-size: 1.2rem;
 }
