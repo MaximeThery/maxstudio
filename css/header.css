@@ -1,7 +1,6 @@
 header{
     background: rgb(244,175,45);
     background: linear-gradient(90deg, rgba(244,175,45,1) 0%, rgba(255,255,255,1) 33%, rgba(105,195,210,1) 100%);
-    position: sticky;
     top: 20px;
     width: 100%;
     display: flex;
