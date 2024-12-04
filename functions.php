@@ -44,4 +44,3 @@ function ajouter_scripts_personnalises() {
 }
 add_action('wp_enqueue_scripts', 'ajouter_scripts_personnalises');
 ?>
-
